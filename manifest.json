@@ -13,6 +13,7 @@
     "activeTab"
   ],
   "web_accessible_resources": [
+      "static/*",
       "themes/*.css"
   ]
 }
