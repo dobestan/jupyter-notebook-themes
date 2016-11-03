@@ -10,10 +10,26 @@
     "default_popup": "popup.html"
   },
   "permissions": [
+    "tabs",
     "activeTab"
   ],
   "web_accessible_resources": [
+      "content_script.js",
       "static/*",
       "themes/*.css"
-  ]
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "all_frames": true,
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
 }
