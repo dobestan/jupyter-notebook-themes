@@ -22,8 +22,11 @@ function removeCSS() {
 
 
 function onExtensionMessage(request) {
-  var themeName = request.theme;
-  insertCSS(themeName);
+  if (request.activate) {
+    insertCSS(request.theme);
+  } else {
+    removeCSS();
+  }
 }
 
 
