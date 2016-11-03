@@ -1,3 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-  alert("hello world");
+  chrome.tabs.insertCSS(
+    null,
+    {file: "themes/custom.css"},
+    function() {
+      console.log("simple theme loaded.");
+    }
+  );
 });
