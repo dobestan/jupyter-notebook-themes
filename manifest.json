@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Jupyter Notebook Themes",
+  "description": "An extension for Google Chrome (and Chromium) which supports awesome Jupyter(IPython) Notebook themes.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
